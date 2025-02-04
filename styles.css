@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+
+.scroll-up:hover {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+   
+.mobilka{
+    width: 1070px;
+    margin: 0 auto;
+    background-color: rgb(152, 219, 248); 
+}  
+
+.mobilka {
+    width: 1070px;
+    margin: 0 auto;
+    background-color: rgb(152, 219, 248); 
+    background-image: url(montaz.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0 68px 0;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+
+}
+header button{
+    width: 211px;
+    height: 60px;
+    border-radius: 10px;
+    background: white;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.531px;
+    border: none;
+}
+.tekst{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .tekst h1{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: -2.501px;
+
+ }
+ .tekst p{
+    color: rgb(29, 27, 27);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.625px;
+    width: 410px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+ .tekstdwa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .tekstdwa h2{
+    color: rgb(21, 20, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.563px;
+ }
+ .tekstdwa p{
+    color: rgb(29, 27, 27);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.625px;
+    width: 410px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+ .teksttry{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .teksttry h3{
+    color: rgb(21, 20, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.563px;
+    margin-left: 250px;
+
+ }
+ .teksttry p{
+    color: rgb(29, 27, 27);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.625px;
+    width: 610px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+
+ }
+ .tablo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .tablo h3{
+    color: rgb(21, 20, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.563px;
+    margin-left: 350px;
+ }
+ .tablo ul{
+    width: 100%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.625px;
+    width: 610px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    list-style-type: none;
+    gap: 50px;
+ }
+
+ @media (max-width: 768px) {
+    .mobilka {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .tekst,
+    .tekstdwa,
+    .teksttry,
+    .tablo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tekst p,
+    .tekstdwa p,
+    .teksttry p,
+    .tablo ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .tekst img,
+    .tekstdwa img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+ 
